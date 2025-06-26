@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vineela Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #bc65ee, #db75d4);
+      color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+    background-color: rgba(243, 220, 127, 0.5); /* Black with 50% transparency */
+    /* OR */
+    opacity: 0.5;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(13, 13, 13);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #a2730e;
+    }
+
+    /* MAIN CONTENT */
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+    }
+
+  
+
+    .left-panel img {
+      width: 90%;
+      max-width: 380px;
+      height: auto;
+      border-radius: 50% / 40%; /* Oval shape */
+      object-fit: cover;
+      margin-left: 5rem;
+    margin-top: 2rem;
+      box-shadow: 0 0 15px rgba(232, 226, 226, 0.1);
+    }
+
+    .right-panel {
+      flex: 2;
+      min-width: 300px;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .heading {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subheading {
+      font-size: 18px;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      color: rgb(128, 94, 0);
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .main-container {
+        flex-direction: column;
+      }
+
+      .left-panel, .right-panel {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+      }
+
+      .left-panel img {
+        max-width: 300px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Vineela</div>
+    <ul class="nav-links">
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\project.html">Home</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Education (1).html">Education</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Skills (1).html">Skills</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Projects page.html">Projects</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Contact (1).html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Section -->
+  <div class="main-container" id="about">
+    <div class="left-panel">
+      <img src="C:\Users\sudhi\OneDrive\Desktop\mine\main.png" alt="Vineela's Photo">
+    </div>
+
+    <div class="right-panel">
+      <div class="heading">Hey, I'm Vineela</div>
+      <div class="subheading">Web Developer | FULL Stack Learner | AI Enthusiast</div>
+
+    
+      <p class="description">
+        I’m a passionate full-stack web developer with a strong interest in building complete, dynamic,
+        and user-friendly web applications. I enjoy working on both the frontend and backend — from designing
+        beautiful interfaces to creating powerful backend systems. I’m continuously learning technologies like
+        HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB to sharpen my skills. My goal is to become
+        a well-rounded full-stack developer capable of delivering high-quality, scalable solutions that provide
+        great user experiences.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

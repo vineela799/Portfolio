@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vineela Portfolio - Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #bc65ee, #db75d4);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+      background-color: rgba(243, 220, 127, 0.5);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(13, 13, 13);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #a2730e;
+    }
+
+    .nav-links li a.active {
+      color: #a2730e;
+      font-weight: bold;
+    }
+
+    /* CONTENT */
+    .content-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 30px;
+    }
+
+    .page-title {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #bc65ee, #db75d4);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    }
+
+    .project-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(45deg, #bc65ee, #db75d4);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .project-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #8b5e00;
+      margin-bottom: 15px;
+    }
+
+    .project-description {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .tech-tag {
+      background: rgba(188, 101, 238, 0.1);
+      color: #8b5e00;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      border: 1px solid rgba(188, 101, 238, 0.3);
+    }
+
+    .internship-section {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      margin-top: 40px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #8b5e00;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .internship-item {
+      background: rgba(243, 220, 127, 0.2);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      border-left: 4px solid #f3dc7f;
+      transition: transform 0.2s ease;
+    }
+
+    .internship-item:hover {
+      transform: translateX(5px);
+    }
+
+    .internship-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #8b5e00;
+      margin-bottom: 5px;
+    }
+
+    .internship-company {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .content-container {
+        padding: 30px 20px;
+      }
+      
+      .page-title {
+        font-size: 36px;
+      }
+      
+      .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Vineela</div>
+    <ul class="nav-links">
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\project.html">Home</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Education (1).html">Education</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Skills (1).html">Skills</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Projects page.html">Projects</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Contact (1).html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Projects Content -->
+  <div class="content-container">
+    <h1 class="page-title">Projects & Work</h1>
+    
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-icon">📚</div>
+        <div class="project-title">Book Stall Website</div>
+        <div class="project-description">
+          Developed a comprehensive web application for an online book store, featuring user-friendly interface for browsing, searching, and purchasing books. The platform includes inventory management and customer interaction features.
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Web Development</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🗑️</div>
+        <div class="project-title">Smart Dustbin</div>
+        <div class="project-description">
+          An IoT-based smart waste management system that automatically detects trash levels and optimizes collection routes. The project focuses on creating sustainable and efficient waste management solutions for urban environments.
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">IoT</span>
+          <span class="tech-tag">Sensors</span>
+          <span class="tech-tag">Automation</span>
+          <span class="tech-tag">Smart City</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🌬️</div>
+        <div class="project-title">Air Monitoring System</div>
+        <div class="project-description">
+          Developed an IoT application for real-time air quality monitoring, tracking various pollutants and environmental factors. The system provides data visualization and alerts for air quality management.
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">IoT</span>
+          <span class="tech-tag">Environmental Monitoring</span>
+          <span class="tech-tag">Data Analytics</span>
+          <span class="tech-tag">Real-time Systems</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🏘️</div>
+        <div class="project-title">Village Development Project</div>
+        <div class="project-description">
+          A community service initiative focused on rural development, implementing technology solutions to address local challenges and improve quality of life in village communities through sustainable development practices.
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Community Service</span>
+          <span class="tech-tag">Rural Development</span>
+          <span class="tech-tag">Social Impact</span>
+          <span class="tech-tag">Sustainability</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="internship-section">
+      <h2 class="section-title">Professional Experience & Internships</h2>
+      
+      <div class="internship-item">
+        <div class="internship-title">MERN Stack Development Internship</div>
+        <div class="internship-company">Biztron Technologies - 1 Month</div>
+      </div>
+
+      <div class="internship-item">
+        <div class="internship-title">Data Science Internship</div>
+        <div class="internship-company">Brainovision - 4 Weeks (Python Focus)</div>
+      </div>
+
+      <div class="internship-item">
+        <div class="internship-title">Python Flask Framework Internship</div>
+        <div class="internship-company">Web Development with Flask</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

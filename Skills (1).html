@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vineela Portfolio - Skills</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #bc65ee, #db75d4);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+      background-color: rgba(243, 220, 127, 0.5);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(13, 13, 13);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #a2730e;
+    }
+
+    .nav-links li a.active {
+      color: #a2730e;
+      font-weight: bold;
+    }
+
+    /* CONTENT */
+    .content-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 30px;
+    }
+
+    .page-title {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .skill-category {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+    }
+
+    .category-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #8b5e00;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .category-icon {
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(45deg, #bc65ee, #db75d4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .skill-list {
+      list-style: none;
+    }
+
+    .skill-item {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(139, 94, 0, 0.1);
+      font-size: 16px;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+
+    .skill-item:last-child {
+      border-bottom: none;
+    }
+
+    .skill-item:hover {
+      color: #bc65ee;
+      font-weight: 500;
+    }
+
+    .achievements-section {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      margin-top: 30px;
+    }
+
+    .achievements-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #8b5e00;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .achievement-item {
+      background: rgba(188, 101, 238, 0.1);
+      padding: 15px 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border-left: 4px solid #bc65ee;
+      transition: transform 0.2s ease;
+    }
+
+    .achievement-item:hover {
+      transform: translateX(5px);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .content-container {
+        padding: 30px 20px;
+      }
+      
+      .page-title {
+        font-size: 36px;
+      }
+      
+      .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Vineela</div>
+    <ul class="nav-links">
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\project.html">Home</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Education (1).html">Education</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Skills (1).html">Skills</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Projects page.html">Projects</a></li>
+      <li><a href="C:\Users\sudhi\OneDrive\Desktop\mine\Contact (1).html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Skills Content -->
+  <div class="content-container">
+    <h1 class="page-title">Skills & Expertise</h1>
+    
+    <div class="skills-grid">
+      <div class="skill-category">
+        <div class="category-title">
+          <div class="category-icon">💻</div>
+          Programming Languages
+        </div>
+        <ul class="skill-list">
+          <li class="skill-item">C Programming</li>
+          <li class="skill-item">Python</li>
+          <li class="skill-item">Java</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <div class="category-title">
+          <div class="category-icon">🗄️</div>
+          Database Technologies
+        </div>
+        <ul class="skill-list">
+          <li class="skill-item">SQL</li>
+          <li class="skill-item">MongoDB</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <div class="category-title">
+          <div class="category-icon">🌐</div>
+          Web Development
+        </div>
+        <ul class="skill-list">
+          <li class="skill-item">HTML5</li>
+          <li class="skill-item">CSS3</li>
+          <li class="skill-item">JavaScript</li>
+          <li class="skill-item">React</li>
+          <li class="skill-item">Python Flask Framework</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <div class="category-title">
+          <div class="category-icon">📊</div>
+          Other Tools
+        </div>
+        <ul class="skill-list">
+          <li class="skill-item">Microsoft Word</li>
+          <li class="skill-item">Microsoft PowerPoint</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="achievements-section">
+      <h2 class="achievements-title">Certificates & Achievements</h2>
+      <div class="achievement-item">
+        <strong>NCC 'B' Certificate</strong> - Successfully completed National Cadet Corps certification
+      </div>
+      <div class="achievement-item">
+        <strong>National Level Ideathon Winner</strong> - First Place at NRI Institute
+      </div>
+      <div class="achievement-item">
+        <strong>Infosys Springboard Certifications</strong> - Completed courses in Python, Java, and HTML-5
+      </div>
+      <div class="achievement-item">
+        <strong>Multiple Internship Completions</strong> - MERN Stack, Data Science, and Flask Framework
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
